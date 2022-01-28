@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Adding css file -->
+    <link rel="stylesheet" href="style.css">
+  
+    
+  
+    <!-- Adding font -->
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  
+    <title>Net performance score</title>
+  </head>
+  <body>
+
+
+
+    <button class="show-mdl">Show modal 1</button>
+
+
+    <!-- <div style="width: 100vw; height: 100vh; background-color: #fff; " ></div>
+    <div style="width: 100vw; height: 100vh; background-color: #fff; "></div> -->
+
+
+    <div class="overlay hidden"></div>
+
+
+    <div class="mdl  hidden">
+
+        
+        <img src="img/cross-sign.svg" alt="X" class="close-mdl ">
+    
+        <div class="mdl-header">
+          
+          <div class="mdl-header-right">
+            <!-- <img src="img/NPS-laptop-img.svg" alt=""> -->
+            <img src="img/feedback-illustration.svg" alt="">
+          </div>
+          
+    
+          <div class="mdl-header-left">
+            <h1>
+              udChalo values your feedback!
+            </h1>
+            <p class="eng-para first-para">
+              Help us to improve our services by providing <br>
+              your valuable feedback.
+            </p>
+    
+            <p class="mobile-off hindi-para">हमारे सर्विसेज़ को और भी बेहतर बनाने के लिए फीडबैक दीजिये |</p>
+          </div>
+    
+        </div>
+    
+        <div class="mdl-rate-section">
+
+
+          <p class="eng-para third-para">How likely are you to recommend udChalo to a friend or a colleague?</p>
+
+          <p class="mobile-off hindi-para">क्या आप udChalo के सर्विसज़ अपने रिश्तेदार और दोस्तों को रेकमेंड करेंगे?</p>
+
+          <div class="rating-scale-description">
+            <p class="mobile-on">1 - 👎 Unlikely</p>
+            <p class="mobile-on">10 - 👍 Very Likely</p>
+          </div>
+
+
+
+          <div class="rating-scale mobile-off">
+            <input name="rating" type="button" value="1" class="red rating-num"></input>
+            <input name="rating" type="button" value="2" class="red rating-num"></input>
+            <input name="rating" type="button" value="3" class="red rating-num"></input>
+            <input name="rating" type="button" value="4" class="red rating-num"></input>
+            <input name="rating" type="button" value="5" class="red rating-num"></input>
+            <input name="rating" type="button" value="6" class="red rating-num"></input>
+            <input name="rating" type="button" value="7" class="orange rating-num"></input>
+            <input name="rating" type="button" value="8" class="orange rating-num"></input>
+            <input name="rating" type="button" value="9" class="green rating-num"></input>
+            <input name="rating" type="button" value="10" class="green rating-num"> </input>
+          </div>
+  
+          <div class="mobile-on">
+            <div class="rating-scale rating-scale1">
+              <input type="button" value="1" class="red rating-num"></input>
+              <input type="button" value="2" class="red rating-num"></input>
+              <input type="button" value="3" class="red rating-num"></input>
+              <input type="button" value="4" class="red rating-num"></input>
+              <input type="button" value="5" class="red rating-num"></input>
+            </div>
+          </div>
+         
+  
+          <div class="mobile-on">
+            <div class="rating-scale rating-scale2">
+              <input type="button" value="6" class="red rating-num"></input>
+              <input type="button" value="7" class="orange rating-num"></input>
+              <input type="button" value="8" class="orange rating-num"></input>
+              <input type="button" value="9" class="green rating-num"></input>
+              <input type="button" value="10" class="green rating-num"> </input>
+            </div>
+          </div>
+          
+    
+          <div class="rating-scale-description rating-scale-description-laptop">
+            <p class="mobile-off">👎 Unlikely</p>
+            <p class="mobile-off">👍 Very Likely</p>
+    
+          </div>
+
+
+          <p class="eng-para third-para">Any suggestions on how we can improve our services, and <span class="bold-weight">Earn  ₹ 100.</span></p>
+
+          <p class="mobile-off hindi-para fourth-para">हमारे सर्विसेज़ को बेहतर करने के लिए सुझाव दीजिय और <span class="bold-weight">₹ 50</span> का udChalo Credit पाइये |</p>
+    
+          <textarea name="suggestion" id="suggestion" rows="4" placeholder="Additional Comments (if any)"></textarea>
+
+          <span id="max-200">Maximum 200 words</span>
+    
+        </div>
+    
+        <button class="submit-btn show-mdl2" type="submit" name="submit">SUBMIT</button>
+        
+      </div>
+
+
+    <!-- --------------- Redeem now modal -------------------------- -->
+   
+    <div class="mdl2  hidden">
+
+      
+      <img src="img/cross-sign.svg" alt="X" class="close-mdl2 ">
+
+      <div class="mdl2-header">
+        
+       
+
+
+        <img class="feedback-thanks-img" src="img/Received-reward.svg" alt="">
+
+
+        <h1 class="thankyou-heading ">Thank you for sharing feedback</h1>
+        <p class="thankyou-eng-para hide-if-no-feedback">Rs 100 will be credited to your udChalo credits <br class="mobile-on"> within 24-48 hours.</p>
+        <p class="thankyou-hindi-para btm-grn-para mobile-off hide-if-no-feedback">24-48 घंटों के भीतर आपके udChalo क्रेडिट में ₹ 100 रुपये जमा कर दिए जाएंगे।</p>
+
+        <hr class='feedback-hr hide-if-no-feedback'>
+        <hr class="feedback-hr-2 hidden">
+        
+
+        <h1 class="avail-heading hide-if-no-feedback">How to Avail</h1>
+
+        <p class="avail-para hide-if-no-feedback">You can reedem <span class="bold">₹ 100</span> in your <span class="bold">next purchase.</span></p>
+
+        <p class="valid-para hide-if-no-feedback">Credited amount will be <span class="bold">valid for next 180 days</span></p>
+
+        <p class="t-and-c hide-if-no-feedback">Terms & Conditions Apply*</p>
+
+         <button class="reedem-btn" type="submit" name="submit">GO BACK</button>
+      </div>
+    </div>
+
+
+<!-- ---------------- Script for modal ------------------------ -->
+
+    <script>
+      const modal = document.querySelector('.mdl');
+      const overlay = document.querySelector('.overlay');
+      const btnCloseModal = document.querySelector('.close-mdl');
+      const btnsOpenModal = document.querySelector('.show-mdl');
+
+      const openModal = function () {
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+      };
+
+      const closeModal = function () {
+        modal.classList.add('hidden');
+        modal2.classList.add('hidden');
+        overlay.classList.add('hidden');
+
+      };
+
+      btnsOpenModal.addEventListener('click', openModal);
+
+      btnCloseModal.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+
+      document.addEventListener('keydown', function (e) {
+
+        if (e.key === 'Escape' && (!modal.classList.contains('hidden') || !modal2.classList.contains('hidden') ) ){
+          closeModal();
+        }
+      });
+
+    </script>
+
+
+<!-- ---------------- Script for modal 2------------------------ -->
+
+<script>
+  const modal2 = document.querySelector('.mdl2');
+  // const overlay2 = document.querySelector('.overlay');
+  const btnCloseModal2 = document.querySelector('.close-mdl2');
+  const btnsOpenModal2 = document.querySelector('.show-mdl2');
+  const hideIfNoFeedback = document.querySelectorAll('.hide-if-no-feedback');
+  const hr = document.querySelector('.feedback-hr-2');
+  const goBack= document.querySelector('.reedem-btn');
+
+  const openModal2 = function () {
+    modal.classList.add('hidden');
+    modal2.classList.remove('hidden');
+
+    if(!textArea.value.length){
+      hideIfNoFeedback.forEach(e => {
+        e.classList.add('hidden');
+      })
+      hr.classList.remove('hidden');
+    }
+  };
+
+  const closeModal2 = function () {
+    modal.classList.add('hidden');
+    modal2.classList.add('hidden');
+    overlay.classList.add('hidden');
+  };
+
+  btnsOpenModal2.addEventListener('click', openModal2);
+
+  btnCloseModal2.addEventListener('click', closeModal2);
+
+  goBack.addEventListener('click',closeModal2);
+  
+</script>
+
+
+<!-- ------------------- Script for maximum 200 words------------------ -->
+
+
+    <script>
+      let textArea=document.querySelector("#suggestion");
+      const maxWord=document.querySelector('#max-200');
+      textArea.addEventListener('keyup',function(e){
+        console.log(textArea.value)
+          if(textArea.value.length>0)
+            maxWord.classList.add('hidden');
+          else  
+            maxWord.classList.remove('hidden');
+      });
+
+
+    </script>
+
+
+    <!-- ---------------- Script for hiding details if feeedback not given  ----------------------- -->
+
+    <script>
+      const gradeBtn=document.querySelectorAll('.rating-num');
+
+      let selectedGrade=0;
+
+      for(let i=0;i<gradeBtn.length;i++){
+          gradeBtn[i].addEventListener('click',function(e){
+
+          for(let j=0;j<gradeBtn.length;j++){
+            if(e.target.closest('.rating-num') != gradeBtn[j])
+              gradeBtn[j].classList.remove(':active');
+            else  
+              gradeBtn[j].classList.add(':active');
+          }
+
+        });
+      }
+      
+    </script>
+
+
+
+  </body>
+</html>
